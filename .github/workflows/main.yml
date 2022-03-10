@@ -1,14 +1,21 @@
+# wf name
 name: CI to Docker Hub 
 
+
+# on
 on:
   push:
     tags:
       - "v*.*.*"
 
+# actions
 jobs:
 
   build:
+    # image
     runs-on: ubuntu-latest
+    
+    # build steps
     steps:
       - 
         name: Checkout
